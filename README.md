@@ -1,1 +1,1 @@
-how to config beans to spring
+how to config beans to spring --> IoC
