@@ -10,13 +10,13 @@
 	<!-- add entry to enable component scanning -->
 
 	<context:component-scan base-package="com.luv2code.springdemo" />
-	<!-- classların properties kısmı için  -->
-	<context:property-placeholder location="classpath:sport.properties"/>
+	
     
-    <!-- aşağıda dependency injectionun konfigurasyonu var  -->
-    <!--BaseballCoach myCoach =new BaseballCoach(myFortune)  -->
-	<bean id="myBaseballCoach" 
-	class="paket1.BaseballCoach">
+	<bean id="myCoach" 
+	class="paket1.TrackCoach"
+	scope="prototype">
+	<!-- yukarıda ki scope kısmından singleton veya prototype olmasını ayarlayabilirsin -->
+	<!-- prototype = her requestte yeni nesne  , singleton = sadece 1 nesne oluşturulur her requestte bu nesne verilir-->
 		<constructor-arg ref="myFortune"/>
 	</bean>
 	
@@ -26,11 +26,7 @@
 		<!-- HappyFortuneService myFortuneService
 		=new HappyFortuneService() -->
 	</bean>
-	<bean id="myCricketCoach" class="paket1.CricketCoach">
-		<property name="fortuneService" ref="myFortune"></property>
-		<property name="emailAddress" value="${foo.email}"></property>
-		<property name="team" value="${foo.team}"></property>
-	</bean>
+
 </beans>
 
 
