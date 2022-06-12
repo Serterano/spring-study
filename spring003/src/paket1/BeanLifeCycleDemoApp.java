@@ -2,10 +2,10 @@ package paket1;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BeanScopeDemoApp {
+public class BeanLifeCycleDemoApp {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext
-				("beanLifeCycle-applicationContext.xml");
+				("beanScope-applicationContext.xml");
 		
 		//bu sınıf bean singleton ve bean prototype farkını ortaya koyuyor
 		
@@ -13,7 +13,13 @@ public class BeanScopeDemoApp {
 		
 		Coach theCoach = context.getBean("myCoach",Coach.class);
 		
-		System.out.println(theCoach.dodailyFortune());
+		Coach alphaCoach = context.getBean("myCoach",Coach.class);
+		
+		boolean result = (theCoach == alphaCoach);
+		
+		System.out.println(result);
+		System.out.println("\n memory loc for theCoach"+theCoach);
+		System.out.println("\n memory loc for theCoach"+alphaCoach);
 		
 		context.close();
 		
