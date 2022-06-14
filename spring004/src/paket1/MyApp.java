@@ -10,7 +10,7 @@ public class MyApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		//config beans to spring
 		
-		Coach coach = context.getBean("TenisKocu",Coach.class);//get bean
+		Coach coach = context.getBean("tennisCoach",Coach.class);//get bean
 		
 		System.out.println(coach.doTrain());
 		
