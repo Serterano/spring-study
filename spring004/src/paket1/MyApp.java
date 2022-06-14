@@ -13,7 +13,7 @@ public class MyApp {
 		//this project include how to spring autowiring(injection)
 		//Auto wiring injection types--> constructor,setter,field injection
 		
-		TennisCoach coach = context.getBean("tennisCoach",TennisCoach.class);//get bean
+		TrackCoach coach = context.getBean("trackCoach",TrackCoach.class);//get bean
 		
 		System.out.println(coach.doTrain());
 		
