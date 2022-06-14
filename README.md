@@ -6,4 +6,4 @@ spring002 = Constructor Dependency Injection in Spring
 
 spring003 = Setter Injection in Spring Framework & Bean Scopes & Bean LifeCycles
 
-spring004 = Creating bean with annotations
+spring004 = Creating bean with annotations,include how to spring autowiring(injection types such as constructor, setter, field)
