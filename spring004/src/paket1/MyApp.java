@@ -8,11 +8,16 @@ public class MyApp {
 
 		ClassPathXmlApplicationContext context =
 				new ClassPathXmlApplicationContext("applicationContext.xml");
-		//config beans to spring
+		//config bean annotation to spring
 		
-		Coach coach = context.getBean("tennisCoach",Coach.class);//get bean
+		//this project include how to spring autowiring(injection)
+		//Auto wiring injection types--> constructor,setter,field injection
+		
+		TennisCoach coach = context.getBean("tennisCoach",TennisCoach.class);//get bean
 		
 		System.out.println(coach.doTrain());
+		
+		System.out.println(coach.getDailyFortune());
 		
 		context.close();
 	}
