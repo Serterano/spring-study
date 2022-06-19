@@ -7,12 +7,13 @@ import org.springframework.stereotype.Component;
 //@Component("TenisKocu") eğer parametre olarak belirtmessek 
 //ilk harfi lowercase yapıp yine nesnesini üretiyor.tennisCoach şeklinde
 //default ayarlıyor(autowiring)
+
 @Component
 public class TennisCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
-	@Autowired //this annotation for constructor injection
+	@Autowired //this annotation for constructor method injection
 	public TennisCoach(FortuneService fortuneService) {
 		this.fortuneService=fortuneService;
 	}
