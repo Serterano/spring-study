@@ -8,4 +8,4 @@ spring003 = Setter Injection in Spring Framework & Bean Scopes & Bean LifeCycles
 
 spring004 = Creating bean with annotations,include how to spring autowiring(injection types such as constructor injection, setter injection, field injection, method injection etc).
 
-spring005 = field injection with qualifiers
+spring005 = Qualifier annotation usage
