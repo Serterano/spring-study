@@ -12,7 +12,7 @@ public class MyApp {
 		
 		//this project include qualifiers
 		
-		BaseballCoach coach = context.getBean("baseballCoach",BaseballCoach.class);//get bean
+		TrackCoach coach = context.getBean("trackCoach",TrackCoach.class);//get bean
 		
 		System.out.println(coach.doTrain());
 		

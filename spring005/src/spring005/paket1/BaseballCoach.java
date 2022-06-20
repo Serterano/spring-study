@@ -12,6 +12,8 @@ public class BaseballCoach implements Coach {
 	
 	//projede constructor injection olan bir bean varsa proje hata mesajı verebilir o yüzden sprin004 projesinde qualifier kullanmadık
 	
+	//qualifier bean idlerini otomatik atar(java8SE da bulunan Introspector class'ı sayesinde) SadFortuneService ---> sadFortuneService
+	
 	@Autowired
 	@Qualifier("sadFortuneService")
 	private FortuneService fortuneService;//field injection --> no need setter method or constructor
