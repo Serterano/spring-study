@@ -2,6 +2,7 @@ package spring005.paket1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 //bean id
@@ -13,6 +14,12 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 
 	private FortuneService fortuneService;
+	
+	@Value("${foo.email}")
+	private String email;
+	    
+	@Value("${foo.team}")
+	private String team;
 	
 	//@Qualifier güzel bir yenilik fakat constructor injection kullanırken kullanımı biraz farklı
 	
@@ -30,6 +37,16 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+	
+	
 	
 
 
