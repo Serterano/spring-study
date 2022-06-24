@@ -1,0 +1,15 @@
+<beans>
+
+	<!-- Step 3: Add support for component scanning -->
+	<context:coponent-scan base-package="spring007MVC"/>
+
+	<!-- step 4: Add support for conversion, formatting and validation support -->
+	<mvc:annotation-driven/>
+	
+	<!-- Step 5: Define Spring MVC view resolver -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/"/>
+		<propert name="suffix" value=".jsp"/>
+	</bean>
+	
+</beans>

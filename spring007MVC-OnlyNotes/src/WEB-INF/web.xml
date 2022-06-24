@@ -1,0 +1,23 @@
+<web-app>
+
+<!-- step 1: Configure Spring MVC Dispatcher Servlet -->
+<servlet>
+	<servlet-name>dispatcher</servlet-name>
+	<servlet-class>spring007MVC.DispatcherServlet</servlet-class>
+	
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-mvc-demo-servlet.xml</param-value>
+	</init-param>
+	
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+<!-- step 2: Set up url mappings to spring mvc dispatcher servlet -->
+<servlet-mapping>
+	<servlet-name>dispatcher</servlet-name>
+	<url-pattern>/</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
