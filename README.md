@@ -12,4 +12,4 @@ spring005 = Qualifier annotation usage , Bean scopes and lifecycle methods (xml 
 
 spring006 = how to configuration spring container without xml file (no xml !!) , configuration .properties file without xml file
 
-sprin007 = spring mvc
+sprin007 = spring mvc notes
