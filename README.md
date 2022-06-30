@@ -14,4 +14,6 @@ spring006 = how to configuration spring container without xml file (no xml !!) ,
 
 sprin007 = spring mvc notes
 
-spring008 = First web application setup with Spring MVC
+spring008 = First web application configuration setup with Spring MVC (with xml)
+
+spring009 = Controllers and Views
