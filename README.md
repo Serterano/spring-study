@@ -1,5 +1,7 @@
 MY SPRING REPO
 ----------------------------------------------------
+note: Be sure to select tomcat 9 otherwise it will cannot run
+
 spring001 = how to config beans to spring --> IoC. (xml configuration)
 
 spring002 = Constructor Dependency Injection in Spring.
