@@ -1,4 +1,4 @@
-package paket1;
+package me.serterano.com;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
