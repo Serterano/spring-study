@@ -18,4 +18,4 @@ sprin007 = spring mvc notes
 
 spring008 = First web application configuration setup with Spring MVC (with xml)
 
-spring009 = Controllers and Views
+spring009 = Controllers and Views & request params/mappings
