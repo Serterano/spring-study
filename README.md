@@ -20,4 +20,4 @@ spring008 = First web application configuration setup with Spring MVC (with xml)
 
 spring009 = Controllers and Views & request params/mappings
 
-this repo no longer support from me because all files are automatically deleted on github
+this repo no longer support from me because all files are automatically deleting on github
